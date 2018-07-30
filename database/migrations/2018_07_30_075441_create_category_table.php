@@ -13,7 +13,7 @@ class CreateCategoryTable extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('password_resets');
+        Schema::dropIfExists('category');
         Schema::defaultStringLength(191);
         Schema::create('category', function (Blueprint $table) {
             $table->increments('id');

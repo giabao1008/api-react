@@ -12,7 +12,7 @@ class CreateEmployeesTable extends Migration
      * @return void
      */
     public function up()
-    {   Schema::dropIfExists('password_resets');
+    {   Schema::dropIfExists('employees');
         Schema::defaultStringLength(191);
         Schema::create('employees', function (Blueprint $table) {
             $table->increments('id');
