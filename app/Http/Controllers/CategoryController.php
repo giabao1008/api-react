@@ -10,12 +10,12 @@ class CategoryController extends Controller
 {
     public function getCategory()
     {
-        $cate = Category::all();
-        if ($cate) {
+        $category = Category::all();
+        if ($category->count()) {
             return response()->json([
                 'success' => true,
-                'code'=> '200',
-                'data' => $cate,
+                'code' => '200',
+                'data' => $category,
             ]);
         } else {
             return response()->json([
